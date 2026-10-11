@@ -76,10 +76,6 @@ export default function CardView({
           <House size={21} />
         </button>
       </header>
-      <div className="card-heading">
-        <span className="eyebrow">EL RETO ESTÁ SERVIDO</span>
-        <span className="small-dot" /> <span>¡Que siga la ronda!</span>
-      </div>
       <div
         ref={stage}
         className="card-stage"
@@ -105,11 +101,6 @@ export default function CardView({
                   }
                 </span>
               )}
-              <span className="card-number">
-                OTRA
-                <br />
-                RONDA ✦
-              </span>
             </div>
             <div className="card-body">
               <div className="card-emblem">
@@ -160,24 +151,9 @@ export default function CardView({
                 </div>
               )}
             </div>
-            <div className="card-bottom">
-              <span>✦</span>
-              <p>
-                {category.id === "telepatia"
-                  ? "Dos mentes. Una respuesta."
-                  : "La pantalla es para quien dirige la prueba."}
-              </p>
-              <span>✦</span>
-            </div>
           </article>
         )}
       </div>
-      <details className="rules">
-        <summary>
-          Cómo se juega <ChevronRight size={16} />
-        </summary>
-        <p>{category.rule}</p>
-      </details>
       {phase === "ready" ? (
         <Countdown key={sequence} />
       ) : (

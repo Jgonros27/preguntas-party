@@ -165,13 +165,7 @@ export default function App() {
         </main>
       ) : screen === "home" ? (
         <main className="screen home-screen">
-          <div className="brand-small">
-            <span className="brand-mark">✦</span> EL PLAN ES JUGAR
-          </div>
           <div className="hero">
-            <div className="hero-badge">
-              <Sparkles size={14} /> TU JUEGO, NUEVAS TARJETAS
-            </div>
             <h1 tabIndex={-1}>
               otra
               <br />
@@ -235,9 +229,6 @@ export default function App() {
             <i />
             <span>Cero complicaciones</span>
           </footer>
-          <p className="unofficial">
-            Complemento independiente para tu Party & Co físico.
-          </p>
         </main>
       ) : screen === "categories" ? (
         <main className="screen category-screen">
@@ -245,18 +236,13 @@ export default function App() {
             <button className="back-button" onClick={() => go("home")}>
               <ArrowLeft size={18} /> Inicio
             </button>
-            <span className="wordmark">
-              otra ronda<span>✦</span>
-            </span>
           </header>
           <div className="section-title">
-            <p className="eyebrow">SIGUE EL COLOR DEL TABLERO</p>
             <h1 tabIndex={-1}>
               ¿Qué toca
               <br />
               <span>esta ronda?</span>
             </h1>
-            <p>Elige categoría. La tarjeta la ponemos nosotros.</p>
           </div>
           <div className="category-list">
             {categories.map((c, i) => (
@@ -285,10 +271,6 @@ export default function App() {
               </button>
             ))}
           </div>
-          <p className="category-note">
-            <Sparkles size={15} /> El tablero manda. Vosotros ponéis la
-            diversión.
-          </p>
         </main>
       ) : (
         card && (
