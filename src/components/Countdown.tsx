@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { Timer, RotateCcw } from "lucide-react";
+import { startAlarm } from "../lib/alarm.mjs";
 export default function Countdown() {
   const [remaining, setRemaining] = useState(30);
   const [running, setRunning] = useState(false);
   const deadline = useRef(0);
   const audio = useRef<AudioContext | null>(null);
+  const alarm = useRef<(() => void) | null>(null);
   useEffect(() => {
     if (!running) return;
     const tick = () => {
@@ -15,31 +17,26 @@ export default function Countdown() {
       setRemaining(next);
       if (next === 0) {
         setRunning(false);
-        try {
-          const ctx = audio.current;
-          if (ctx) {
-            const osc = ctx.createOscillator();
-            const gain = ctx.createGain();
-            osc.connect(gain);
-            gain.connect(ctx.destination);
-            osc.frequency.value = 660;
-            gain.gain.setValueAtTime(0.13, ctx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(
-              0.001,
-              ctx.currentTime + 0.4,
-            );
-            osc.start();
-            osc.stop(ctx.currentTime + 0.4);
-          }
-        } catch {}
       }
     };
     tick();
     const id = window.setInterval(tick, 100);
     return () => clearInterval(id);
   }, [running]);
+  useEffect(() => {
+    if (remaining !== 0) return;
+    try {
+      if (audio.current) alarm.current = startAlarm(audio.current);
+    } catch {}
+    return () => {
+      alarm.current?.();
+      alarm.current = null;
+    };
+  }, [remaining]);
   useEffect(
     () => () => {
+      alarm.current?.();
+      alarm.current = null;
       void audio.current?.close().catch(() => {});
     },
     [],
@@ -53,6 +50,8 @@ export default function Countdown() {
     setRunning(true);
   }
   function reset() {
+    alarm.current?.();
+    alarm.current = null;
     setRunning(false);
     setRemaining(30);
   }
@@ -82,7 +81,7 @@ export default function Countdown() {
         </strong>
         <span>
           {remaining === 0
-            ? "Se acabaron los 30 segundos"
+            ? "Pulsa Reiniciar para detener la alarma"
             : running
               ? "El reloj está en marcha"
               : "30 segundos · temporizador opcional"}
@@ -103,6 +102,7 @@ export default function Countdown() {
           aria-label="Reiniciar temporizador"
         >
           <RotateCcw size={19} />
+          {remaining === 0 && "Reiniciar"}
         </button>
       )}
       {!running && remaining !== 30 && remaining > 0 && (

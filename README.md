@@ -85,7 +85,7 @@ Diseño adaptable a móviles, tablets y pantallas grandes con áreas seguras, co
 
 ## Ampliación editorial y procedencia
 
-La versión actual contiene exactamente **7.500 tarjetas: 1.500 por categoría**. Los nueve tests verifican cantidades, diversidad de ámbitos y dificultades en los cinco mazos, los ejemplos sencillos de Mímica, datos válidos y dos rondas completas de cada mazo con persistencia. Las 50 cartas iniciales mantienen sus IDs y textos para conservar el progreso.
+La versión actual contiene exactamente **7.500 tarjetas: 1.500 por categoría**. Los tests verifican cantidades, diversidad de ámbitos y dificultades en los cinco mazos, los ejemplos sencillos de Mímica, datos válidos y dos rondas completas de cada mazo con persistencia. También comprueban la alarma repetida y su parada. Las 50 cartas iniciales mantienen sus IDs y textos para conservar el progreso.
 
 En Mímica hay más de 400 acciones cotidianas fáciles, además de animales, profesiones, películas, series, personajes, famosos y desafíos. Dibujos y Prohibido incluyen también acciones y escenas concretas. Telepatía combina temas abiertos de marcas, gastronomía, personajes, animales y planes. Las etiquetas de dificultad son orientativas y no cambian la aleatoriedad.
 
@@ -102,3 +102,5 @@ Regenera todos los mazos desde esos bancos y `scripts/content/trivia-source.json
 La aplicación no ejecuta estos scripts ni consulta APIs durante una partida. Vite separa los cinco mazos en recursos estáticos que el service worker guarda junto con la interfaz. Así se evita concentrar todo el contenido en un único archivo grande.
 
 Al pulsar **Otra tarjeta**, la carta sale, se retira del DOM y aparece la siguiente. El botón se bloquea durante esa transición y se cancela cualquier cambio pendiente si se abandona la pantalla. Con movimiento reducido, la sustitución es inmediata. El temporizador se detiene y se reinicia; se vuelve al comienzo de la carta para que el contenido nuevo quede visible.
+
+Al llegar a cero, el temporizador reproduce una alarma fuerte de tonos alternos en bucle mediante Web Audio. Continúa hasta pulsar **Reiniciar** o cambiar de carta/salir de la prueba. No depende de repetir un intervalo de JavaScript para mantener el sonido. Su nivel final depende del volumen del dispositivo; el contexto de audio se activa al pulsar Iniciar.
