@@ -1,0 +1,42 @@
+[
+  {
+    "id": "mimica-001",
+    "prompt": "Un mago al que le sale mal un truco"
+  },
+  {
+    "id": "mimica-002",
+    "prompt": "Un socorrista rescatando a alguien"
+  },
+  {
+    "id": "mimica-003",
+    "prompt": "Un pingüino aprendiendo a bailar"
+  },
+  {
+    "id": "mimica-004",
+    "prompt": "Una persona montando un mueble sin instrucciones"
+  },
+  {
+    "id": "mimica-005",
+    "prompt": "Spider-Man lanzando telarañas"
+  },
+  {
+    "id": "mimica-006",
+    "prompt": "Un director de orquesta en pleno concierto"
+  },
+  {
+    "id": "mimica-007",
+    "prompt": "Jurassic Park"
+  },
+  {
+    "id": "mimica-008",
+    "prompt": "Una persona pisando piezas de construcción descalza"
+  },
+  {
+    "id": "mimica-009",
+    "prompt": "Un peluquero cortando el pelo a alguien que no para de moverse"
+  },
+  {
+    "id": "mimica-010",
+    "prompt": "Un cantante de ópera que se queda sin voz"
+  }
+]

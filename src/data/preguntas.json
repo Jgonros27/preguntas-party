@@ -1,0 +1,65 @@
+[
+  {
+    "id": "preguntas-001",
+    "prompt": "¿Qué país ganó el Mundial de fútbol masculino de 2010?",
+    "answer": "España",
+    "type": "open"
+  },
+  {
+    "id": "preguntas-002",
+    "prompt": "¿Cuál de estos elementos tiene el símbolo químico Au?",
+    "answer": "Oro",
+    "type": "choice",
+    "options": ["Plata", "Oro", "Aluminio"]
+  },
+  {
+    "id": "preguntas-003",
+    "prompt": "Verdadero o falso: los pulpos tienen tres corazones.",
+    "answer": "Verdadero. Tienen dos corazones branquiales y uno sistémico.",
+    "type": "boolean"
+  },
+  {
+    "id": "preguntas-004",
+    "prompt": "¿Quién pintó el Guernica?",
+    "answer": "Pablo Picasso",
+    "type": "open"
+  },
+  {
+    "id": "preguntas-005",
+    "prompt": "¿Cuál es la capital de Canadá?",
+    "answer": "Ottawa",
+    "type": "choice",
+    "options": ["Toronto", "Vancouver", "Ottawa"]
+  },
+  {
+    "id": "preguntas-006",
+    "prompt": "¿En qué año llegó el ser humano a la Luna por primera vez?",
+    "answer": "1969",
+    "type": "open"
+  },
+  {
+    "id": "preguntas-007",
+    "prompt": "Verdadero o falso: el sonido se propaga en el vacío.",
+    "answer": "Falso. Necesita un medio material para propagarse.",
+    "type": "boolean"
+  },
+  {
+    "id": "preguntas-008",
+    "prompt": "¿Qué director dirigió la película Titanic de 1997?",
+    "answer": "James Cameron",
+    "type": "choice",
+    "options": ["Steven Spielberg", "James Cameron", "Ridley Scott"]
+  },
+  {
+    "id": "preguntas-009",
+    "prompt": "¿Qué instrumento tocaba principalmente Louis Armstrong?",
+    "answer": "La trompeta",
+    "type": "open"
+  },
+  {
+    "id": "preguntas-010",
+    "prompt": "¿Qué civilización construyó Machu Picchu?",
+    "answer": "La civilización inca",
+    "type": "open"
+  }
+]

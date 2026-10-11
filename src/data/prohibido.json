@@ -1,0 +1,52 @@
+[
+  {
+    "id": "prohibido-001",
+    "prompt": "Biblioteca",
+    "forbidden": ["Libro", "Leer", "Silencio", "Préstamo"]
+  },
+  {
+    "id": "prohibido-002",
+    "prompt": "Vampiro",
+    "forbidden": ["Sangre", "Colmillos", "Drácula", "Noche"]
+  },
+  {
+    "id": "prohibido-003",
+    "prompt": "Aeropuerto",
+    "forbidden": ["Avión", "Vuelo", "Maleta", "Pista"]
+  },
+  {
+    "id": "prohibido-004",
+    "prompt": "Sherlock Holmes",
+    "forbidden": ["Detective", "Watson", "Lupa", "Londres"]
+  },
+  {
+    "id": "prohibido-005",
+    "prompt": "Volcán",
+    "forbidden": ["Lava", "Erupción", "Montaña", "Fuego"]
+  },
+  {
+    "id": "prohibido-006",
+    "prompt": "Instagram",
+    "forbidden": ["Foto", "Red", "Seguidores", "Publicación"]
+  },
+  {
+    "id": "prohibido-007",
+    "prompt": "Cleopatra",
+    "forbidden": ["Egipto", "Reina", "Nilo", "Faraón"]
+  },
+  {
+    "id": "prohibido-008",
+    "prompt": "Karaoke",
+    "forbidden": ["Cantar", "Micrófono", "Canción", "Letra"]
+  },
+  {
+    "id": "prohibido-009",
+    "prompt": "Ajedrez",
+    "forbidden": ["Rey", "Reina", "Tablero", "Jaque"]
+  },
+  {
+    "id": "prohibido-010",
+    "prompt": "Cumpleaños",
+    "forbidden": ["Tarta", "Velas", "Regalo", "Años"]
+  }
+]
