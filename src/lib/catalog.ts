@@ -18,6 +18,8 @@ export type Card = {
   type?: string;
   options?: string[];
   forbidden?: string[];
+  difficulty?: "easy" | "medium" | "hard";
+  topic?: string;
 };
 export const categories = [
   {
@@ -28,7 +30,7 @@ export const categories = [
     Icon: Brain,
     rule: "Dos jugadores, un tema. A la cuenta de tres, decid una respuesta a la vez. ¡Tenéis que coincidir! No valen marcas blancas.",
     instruction: "Coincidid en…",
-    cards: telepatia,
+    cards: telepatia as Card[],
   },
   {
     id: "mimica",
@@ -38,7 +40,7 @@ export const categories = [
     Icon: Star,
     rule: "Representa la prueba para tu equipo. Puedes hacer sonidos y onomatopeyas relacionados, pero no decir la respuesta.",
     instruction: "Representa…",
-    cards: mimica,
+    cards: mimica as Card[],
   },
   {
     id: "preguntas",
@@ -48,7 +50,7 @@ export const categories = [
     Icon: CircleHelp,
     rule: "Lee la pregunta sin enseñar la pantalla a quien responde. El equipo puede consultar, pero debe dar una única respuesta.",
     instruction: "La pregunta es…",
-    cards: preguntas,
+    cards: preguntas as Card[],
   },
   {
     id: "dibujos",
@@ -58,7 +60,7 @@ export const categories = [
     Icon: Pencil,
     rule: "Dibuja en papel para que tu equipo lo adivine. No puedes hablar, hacer sonidos, gesticular ni escribir letras o números.",
     instruction: "Dibuja…",
-    cards: dibujos,
+    cards: dibujos as Card[],
   },
   {
     id: "prohibido",
@@ -68,7 +70,7 @@ export const categories = [
     Icon: MessageCircleWarning,
     rule: "Explica el concepto sin decir las cuatro palabras prohibidas, sus derivados, iniciales ni abreviaturas. Tampoco digas el concepto.",
     instruction: "Haz que adivinen…",
-    cards: prohibido,
+    cards: prohibido as Card[],
   },
 ];
 export function validateCatalog() {

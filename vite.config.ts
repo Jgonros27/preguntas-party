@@ -3,11 +3,26 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 export default defineConfig({
   base: "./",
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          const deck = id.match(/\/src\/data\/([^/]+)\.json$/);
+          if (deck) return `cards-${deck[1]}`;
+        },
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({
       registerType: "prompt",
-      includeAssets: ["icon.svg", "apple-touch-icon.png"],
+      includeAssets: [
+        "icon.svg",
+        "apple-touch-icon.png",
+        "quizify-license.txt",
+        "content-notices.txt",
+      ],
       manifest: {
         name: "Otra ronda · Tarjetas de fiesta",
         short_name: "Otra ronda",

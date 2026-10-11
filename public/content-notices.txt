@@ -1,0 +1,27 @@
+Otra ronda · Contenido y fuentes
+
+Los cinco mazos contienen 1.500 tarjetas cada uno. Los bancos locales de conceptos,
+acciones, personajes y temas se mantienen en scripts/content/. La selección mezcla
+ámbitos y dificultades; algunas pruebas son combinaciones de un personaje o una
+profesión con una situación concreta. Las dificultades son orientativas.
+
+Las 50 tarjetas originales conservan sus identificadores.
+
+Las preguntas añadidas adaptan una selección de los bancos en español de Quizify:
+https://github.com/mholzi/quizify
+Autor: Markus Holzhäuser y colaboradores.
+Snapshot: b0eac76d463940815ba01d32a805dca5f44f727c (10 de octubre de 2026).
+Licencia MIT; el aviso completo se distribuye en quizify-license.txt.
+
+Adaptaciones: selección de ámbitos, exclusión de imágenes y estimaciones,
+filtrado de referencias temporales, retirada de duplicados, conversión de algunos
+registros a preguntas abiertas o verdadero/falso, IDs estables y metadatos de tema.
+Cada tarjeta adaptada guarda la referencia al archivo y al identificador original.
+No se añaden distintas versiones de una pregunta para aumentar el número de cartas.
+
+Toda la información usada durante una partida está en los JSON compilados con la
+aplicación. No hay peticiones a una API de preguntas ni dependencias de este sitio.
+
+Los nombres de películas, personajes y marcas se utilizan para identificar los
+conceptos de las pruebas. Otra ronda es un complemento independiente para un juego
+de mesa físico y no está afiliado a Party & Co, Diset ni a las marcas mencionadas.

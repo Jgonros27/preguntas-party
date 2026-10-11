@@ -1,0 +1,146 @@
+{
+  "prohibido": {
+    "cards": 1500,
+    "topics": {
+      "personajes": 193,
+      "transporte": 50,
+      "animales": 143,
+      "acciones y situaciones": 200,
+      "fantasía": 35,
+      "famosos": 151,
+      "tecnología": 45,
+      "gastronomía": 50,
+      "naturaleza": 50,
+      "cine y series": 146,
+      "música y espectáculo": 50,
+      "herramientas y plantas": 50,
+      "profesiones": 50,
+      "emociones y conceptos": 77,
+      "lugares": 50,
+      "hogar": 50,
+      "vida cotidiana": 50,
+      "selección original": 10,
+      "objetos y juegos": 50
+    },
+    "difficulty": {
+      "medium": 1007,
+      "easy": 257,
+      "hard": 236
+    },
+    "formats": {
+      "challenge": 1500
+    }
+  },
+  "dibujos": {
+    "cards": 1500,
+    "topics": {
+      "personajes": 165,
+      "música y espectáculo": 35,
+      "fantasía": 36,
+      "acciones y situaciones": 186,
+      "emociones y conceptos": 77,
+      "cine y series": 136,
+      "transporte": 35,
+      "escenas de profesiones": 136,
+      "objetos y juegos": 35,
+      "animales": 136,
+      "herramientas y plantas": 35,
+      "profesiones": 35,
+      "escenas de animales": 136,
+      "vida cotidiana": 35,
+      "naturaleza": 35,
+      "famosos": 96,
+      "lugares": 35,
+      "gastronomía": 36,
+      "hogar": 35,
+      "tecnología": 35,
+      "selección original": 10
+    },
+    "difficulty": {
+      "medium": 1102,
+      "hard": 181,
+      "easy": 217
+    },
+    "formats": {
+      "challenge": 1500
+    }
+  },
+  "mimica": {
+    "cards": 1500,
+    "topics": {
+      "acciones cotidianas": 470,
+      "escenas de animales": 170,
+      "escenas de profesiones": 170,
+      "animales": 120,
+      "fantasía": 35,
+      "desafíos y situaciones": 100,
+      "música y espectáculo": 30,
+      "profesiones": 75,
+      "cine y series": 120,
+      "famosos": 60,
+      "personajes": 120,
+      "emociones y conceptos": 20,
+      "selección original": 10
+    },
+    "difficulty": {
+      "easy": 598,
+      "medium": 726,
+      "hard": 176
+    },
+    "formats": {
+      "challenge": 1500
+    }
+  },
+  "telepatia": {
+    "cards": 1500,
+    "topics": {
+      "marcas": 300,
+      "acciones y planes": 80,
+      "gastronomía": 300,
+      "personajes reales": 260,
+      "temas clásicos": 100,
+      "personajes de ficción": 350,
+      "animales": 80,
+      "temas difíciles": 20,
+      "selección original": 10
+    },
+    "difficulty": {
+      "easy": 796,
+      "medium": 639,
+      "hard": 65
+    },
+    "formats": {
+      "challenge": 1500
+    }
+  },
+  "preguntas": {
+    "cards": 1500,
+    "topics": {
+      "Cine y series": 110,
+      "Ciencia": 110,
+      "Cultura Pop": 110,
+      "Música": 109,
+      "Tecnología": 109,
+      "Geografía": 110,
+      "Copa Mundial": 110,
+      "Halloween": 96,
+      "Naturaleza": 109,
+      "Deportes": 110,
+      "selección original": 10,
+      "Nochevieja": 93,
+      "Navidad": 95,
+      "Comida y bebida": 110,
+      "Historia": 109
+    },
+    "difficulty": {
+      "medium": 712,
+      "hard": 282,
+      "easy": 506
+    },
+    "formats": {
+      "open": 459,
+      "choice": 1010,
+      "boolean": 31
+    }
+  }
+}

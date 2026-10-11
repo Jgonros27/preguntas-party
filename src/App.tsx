@@ -226,7 +226,12 @@ export default function App() {
           <footer>
             <span>5 categorías</span>
             <i />
-            <span>50 retos</span>
+            <span>
+              {categories
+                .reduce((total, c) => total + c.cards.length, 0)
+                .toLocaleString("es-ES")}{" "}
+              retos
+            </span>
             <i />
             <span>Cero complicaciones</span>
           </footer>

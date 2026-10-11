@@ -1,0 +1,307 @@
+{
+  "telepatia": [
+    {
+      "id": "telepatia-001",
+      "prompt": "Una marca de zapatillas deportivas"
+    },
+    {
+      "id": "telepatia-002",
+      "prompt": "Un personaje de Harry Potter"
+    },
+    {
+      "id": "telepatia-003",
+      "prompt": "Un ingrediente de una pizza"
+    },
+    {
+      "id": "telepatia-004",
+      "prompt": "Un cantante español"
+    },
+    {
+      "id": "telepatia-005",
+      "prompt": "Una marca de chocolate"
+    },
+    {
+      "id": "telepatia-006",
+      "prompt": "Un superhéroe de Marvel"
+    },
+    {
+      "id": "telepatia-007",
+      "prompt": "Un plato típico de México"
+    },
+    {
+      "id": "telepatia-008",
+      "prompt": "Un personaje de dibujos animados que sea un animal"
+    },
+    {
+      "id": "telepatia-009",
+      "prompt": "Una marca de teléfonos móviles"
+    },
+    {
+      "id": "telepatia-010",
+      "prompt": "Un postre que se coma con cuchara"
+    }
+  ],
+  "mimica": [
+    {
+      "id": "mimica-001",
+      "prompt": "Un mago al que le sale mal un truco"
+    },
+    {
+      "id": "mimica-002",
+      "prompt": "Un socorrista rescatando a alguien"
+    },
+    {
+      "id": "mimica-003",
+      "prompt": "Un pingüino aprendiendo a bailar"
+    },
+    {
+      "id": "mimica-004",
+      "prompt": "Una persona montando un mueble sin instrucciones"
+    },
+    {
+      "id": "mimica-005",
+      "prompt": "Spider-Man lanzando telarañas"
+    },
+    {
+      "id": "mimica-006",
+      "prompt": "Un director de orquesta en pleno concierto"
+    },
+    {
+      "id": "mimica-007",
+      "prompt": "Jurassic Park"
+    },
+    {
+      "id": "mimica-008",
+      "prompt": "Una persona pisando piezas de construcción descalza"
+    },
+    {
+      "id": "mimica-009",
+      "prompt": "Un peluquero cortando el pelo a alguien que no para de moverse"
+    },
+    {
+      "id": "mimica-010",
+      "prompt": "Un cantante de ópera que se queda sin voz"
+    }
+  ],
+  "preguntas": [
+    {
+      "id": "preguntas-001",
+      "prompt": "¿Qué país ganó el Mundial de fútbol masculino de 2010?",
+      "answer": "España",
+      "type": "open"
+    },
+    {
+      "id": "preguntas-002",
+      "prompt": "¿Cuál de estos elementos tiene el símbolo químico Au?",
+      "answer": "Oro",
+      "type": "choice",
+      "options": [
+        "Plata",
+        "Oro",
+        "Aluminio"
+      ]
+    },
+    {
+      "id": "preguntas-003",
+      "prompt": "Verdadero o falso: los pulpos tienen tres corazones.",
+      "answer": "Verdadero. Tienen dos corazones branquiales y uno sistémico.",
+      "type": "boolean"
+    },
+    {
+      "id": "preguntas-004",
+      "prompt": "¿Quién pintó el Guernica?",
+      "answer": "Pablo Picasso",
+      "type": "open"
+    },
+    {
+      "id": "preguntas-005",
+      "prompt": "¿Cuál es la capital de Canadá?",
+      "answer": "Ottawa",
+      "type": "choice",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Ottawa"
+      ]
+    },
+    {
+      "id": "preguntas-006",
+      "prompt": "¿En qué año llegó el ser humano a la Luna por primera vez?",
+      "answer": "1969",
+      "type": "open"
+    },
+    {
+      "id": "preguntas-007",
+      "prompt": "Verdadero o falso: el sonido se propaga en el vacío.",
+      "answer": "Falso. Necesita un medio material para propagarse.",
+      "type": "boolean"
+    },
+    {
+      "id": "preguntas-008",
+      "prompt": "¿Qué director dirigió la película Titanic de 1997?",
+      "answer": "James Cameron",
+      "type": "choice",
+      "options": [
+        "Steven Spielberg",
+        "James Cameron",
+        "Ridley Scott"
+      ]
+    },
+    {
+      "id": "preguntas-009",
+      "prompt": "¿Qué instrumento tocaba principalmente Louis Armstrong?",
+      "answer": "La trompeta",
+      "type": "open"
+    },
+    {
+      "id": "preguntas-010",
+      "prompt": "¿Qué civilización construyó Machu Picchu?",
+      "answer": "La civilización inca",
+      "type": "open"
+    }
+  ],
+  "dibujos": [
+    {
+      "id": "dibujos-001",
+      "prompt": "Un faro en una isla"
+    },
+    {
+      "id": "dibujos-002",
+      "prompt": "Un pulpo cocinero"
+    },
+    {
+      "id": "dibujos-003",
+      "prompt": "Una montaña rusa"
+    },
+    {
+      "id": "dibujos-004",
+      "prompt": "Un castillo de arena"
+    },
+    {
+      "id": "dibujos-005",
+      "prompt": "Un camaleón"
+    },
+    {
+      "id": "dibujos-006",
+      "prompt": "Una casa en un árbol"
+    },
+    {
+      "id": "dibujos-007",
+      "prompt": "Un dragón resfriado"
+    },
+    {
+      "id": "dibujos-008",
+      "prompt": "Un submarino"
+    },
+    {
+      "id": "dibujos-009",
+      "prompt": "La Estatua de la Libertad"
+    },
+    {
+      "id": "dibujos-010",
+      "prompt": "Un robot paseando a un perro"
+    }
+  ],
+  "prohibido": [
+    {
+      "id": "prohibido-001",
+      "prompt": "Biblioteca",
+      "forbidden": [
+        "Libro",
+        "Leer",
+        "Silencio",
+        "Préstamo"
+      ]
+    },
+    {
+      "id": "prohibido-002",
+      "prompt": "Vampiro",
+      "forbidden": [
+        "Sangre",
+        "Colmillos",
+        "Drácula",
+        "Noche"
+      ]
+    },
+    {
+      "id": "prohibido-003",
+      "prompt": "Aeropuerto",
+      "forbidden": [
+        "Avión",
+        "Vuelo",
+        "Maleta",
+        "Pista"
+      ]
+    },
+    {
+      "id": "prohibido-004",
+      "prompt": "Sherlock Holmes",
+      "forbidden": [
+        "Detective",
+        "Watson",
+        "Lupa",
+        "Londres"
+      ]
+    },
+    {
+      "id": "prohibido-005",
+      "prompt": "Volcán",
+      "forbidden": [
+        "Lava",
+        "Erupción",
+        "Montaña",
+        "Fuego"
+      ]
+    },
+    {
+      "id": "prohibido-006",
+      "prompt": "Instagram",
+      "forbidden": [
+        "Foto",
+        "Red",
+        "Seguidores",
+        "Publicación"
+      ]
+    },
+    {
+      "id": "prohibido-007",
+      "prompt": "Cleopatra",
+      "forbidden": [
+        "Egipto",
+        "Reina",
+        "Nilo",
+        "Faraón"
+      ]
+    },
+    {
+      "id": "prohibido-008",
+      "prompt": "Karaoke",
+      "forbidden": [
+        "Cantar",
+        "Micrófono",
+        "Canción",
+        "Letra"
+      ]
+    },
+    {
+      "id": "prohibido-009",
+      "prompt": "Ajedrez",
+      "forbidden": [
+        "Rey",
+        "Reina",
+        "Tablero",
+        "Jaque"
+      ]
+    },
+    {
+      "id": "prohibido-010",
+      "prompt": "Cumpleaños",
+      "forbidden": [
+        "Tarta",
+        "Velas",
+        "Regalo",
+        "Años"
+      ]
+    }
+  ]
+}

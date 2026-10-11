@@ -17,12 +17,11 @@ export function draw(ids, saved = {}, random = Math.random) {
     ? [...new Set(saved.queue.filter((id) => valid.has(id) && !used.has(id)))]
     : [];
   const known = new Set(queue);
-  queue.push(
-    ...shuffle(
-      ids.filter((id) => !used.has(id) && !known.has(id)),
-      random,
-    ),
-  );
+  const additions = ids.filter((id) => !used.has(id) && !known.has(id));
+  // Mezcla también las cartas nuevas con las pendientes: al ampliar un mazo
+  // no hay que terminar primero la antigua cola para descubrir el contenido.
+  if (additions.length || saved.size !== ids.length)
+    queue = shuffle([...queue, ...additions], random);
   if (!queue.length) {
     used.clear();
     queue = shuffle(ids, random);
@@ -33,18 +32,33 @@ export function draw(ids, saved = {}, random = Math.random) {
   }
   const id = queue.shift();
   used.add(id);
-  return { id, state: { queue, used: [...used], last: id } };
+  return { id, state: { queue, used: [...used], last: id, size: ids.length } };
 }
 export function validateCards(category, cards) {
   if (!Array.isArray(cards) || !cards.length)
     throw new Error(category + ": no hay tarjetas.");
   const seen = new Set();
+  const texts = new Set();
   for (const card of cards) {
     if (typeof card.id !== "string" || !card.id.trim() || seen.has(card.id))
       throw new Error(category + ": identificador inválido o duplicado.");
     seen.add(card.id);
     if (typeof card.prompt !== "string" || !card.prompt.trim())
       throw new Error(category + ": falta el texto.");
+    const text = card.prompt
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLocaleLowerCase("es")
+      .replace(/[^\p{L}\p{N}]+/gu, " ")
+      .trim();
+    if (texts.has(text))
+      throw new Error(category + ": texto de tarjeta duplicado.");
+    texts.add(text);
+    if (
+      card.difficulty !== undefined &&
+      !["easy", "medium", "hard"].includes(card.difficulty)
+    )
+      throw new Error(category + ": dificultad desconocida.");
     if (category === "preguntas") {
       if (
         typeof card.answer !== "string" ||
